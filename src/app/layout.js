@@ -32,19 +32,33 @@ export default function RootLayout({ children }) {
         {/* Navigation Bar */}
         <NavBar />
         {/* Main Content */}
-        <main style={{ flex: 1, background: 'linear-gradient(180deg, #222 60%, #222a 100%)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingTop: '3rem' }}>
-          {/* Children (other pages) */}
-          {children}
+        <main style={{
+          flex: 1,
+          background: 'linear-gradient(180deg, #222 60%, #222a 100%)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '3rem 1rem',
+          boxSizing: 'border-box',
+        }}>
+          <div style={{ width: '100%', maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+            {/* Children (other pages) */}
+            {children}
+          </div>
         </main>
         {/* Footer with social icons */}
         <footer style={{ width: '100%', background: '#222', padding: '2rem 0', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2rem', marginTop: 0 }}>
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }} aria-label="X">
+          {/* <a href="https://x.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }} aria-label="X">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 7L25 25M25 7L7 25" stroke="white" strokeWidth="3" strokeLinecap="round"/></svg>
-          </a>
+          </a> */}
           <a href="https://www.linkedin.com/in/bennachmanson/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }} aria-label="LinkedIn">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="7" y="11" width="3" height="14" fill="white"/><rect x="14" y="11" width="3" height="14" fill="white"/><rect x="21" y="11" width="3" height="14" fill="white"/><circle cx="8.5" cy="8.5" r="1.5" fill="white"/></svg>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="16" fill="none"/>
+              <text x="6" y="25" fontFamily="Inter, Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="22" fill="white">in</text>
+            </svg>
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }} aria-label="GitHub">
+          <a href="https://github.com/ben-nachmanson" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }} aria-label="GitHub">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 3C9.373 3 4 8.373 4 15c0 5.304 3.438 9.8 8.207 11.387.6.111.82-.261.82-.58 0-.287-.011-1.244-.017-2.255-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.238 1.84 1.238 1.072 1.837 2.813 1.306 3.498.999.108-.776.42-1.306.763-1.607-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.304-.535-1.527.117-3.184 0 0 1.008-.323 3.3 1.23a11.52 11.52 0 013.006-.404c1.02.005 2.047.138 3.006.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.657.242 2.88.119 3.184.77.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.625-5.475 5.921.431.372.815 1.104.815 2.226 0 1.607-.015 2.904-.015 3.299 0 .322.217.695.825.577C24.565 24.797 28 20.303 28 15c0-6.627-5.373-12-12-12z" fill="white"/></svg>
           </a>
         </footer>
