@@ -186,7 +186,7 @@ export default function NavBar() {
 									{link.label}
 								</Link>
 							))}
-							<button
+							{/* <button
 								style={{
 									width: "100%",
 									marginTop: "1rem",
@@ -203,7 +203,7 @@ export default function NavBar() {
 								}}
 							>
 								Login
-							</button>
+							</button> */}
 						</div>
 					)}
 				</div>
