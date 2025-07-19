@@ -33,7 +33,7 @@ export default function Contact() {
     <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '2rem', minHeight: '60vh' }}>
       <h1 style={{ fontSize: '2.5rem', fontWeight: 700, color: '#27c46c', marginBottom: '1rem' }}>Contact</h1>
       <p style={{ fontSize: '1.1rem', color: '#bfc7d5', textAlign: 'center', maxWidth: 600 }}>
-        Send me a message below and I'll get back to you!
+        Send me a message below and I&apos;ll get back to you!
       </p>
       <div style={{ background: '#181818', padding: 32, borderRadius: 16, boxShadow: '0 4px 24px rgba(39,196,108,0.08)', marginTop: 32, width: '100%', maxWidth: 400 }}>
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>

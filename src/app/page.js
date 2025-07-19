@@ -26,7 +26,7 @@ export default function Home() {
         Ben Nachmanson
       </h1>
       <p style={{ color: '#bfc7d5', fontSize: '1.3rem', textAlign: 'center', maxWidth: 700, marginBottom: '2.5rem' }}>
-        I'm a Software Engineer based in Austin, currently focused on infastructure reliability, availability, and automation.
+        I&apos;m a Software Engineer based in Austin, currently focused on infastructure reliability, availability, and automation.
       </p>
       <div style={{ background: '#222', borderRadius: 16, boxShadow: 'none', padding: '2rem', marginTop: '1rem', width: '100%', maxWidth: 900, textAlign: 'left', border: '1px solid #333' }}>
         <h2 style={{ color: '#27c46c', fontWeight: 700, fontSize: '1.5rem', marginBottom: '1rem' }}>Experience</h2>

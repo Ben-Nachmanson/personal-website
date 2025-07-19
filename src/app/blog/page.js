@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+
 
 // Example LinkedIn posts array
 const linkedInPosts = [
@@ -48,7 +50,7 @@ export default function Blog() {
             onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
             onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
           >
-            <img src={post.image} alt={post.title} style={{ width: '100%', height: 140, objectFit: 'cover' }} />
+            <Image src={post.image} alt={post.title} width={260} height={140} style={{ width: '100%', height: 140, objectFit: 'cover' }} />
             <div style={{ padding: '1rem', textAlign: 'center' }}>
               <span style={{ color: '#27c46c', fontWeight: 700, fontSize: '1.1rem' }}>{post.title}</span>
             </div>
