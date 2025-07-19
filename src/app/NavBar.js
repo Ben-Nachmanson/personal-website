@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
 	{ href: "/", label: "Home" },
-	{ href: "/about", label: "About" },
+	// { href: "/about", label: "About" },
 	{ href: "/blog", label: "Blog" },
 	{ href: "/contact", label: "Contact" },
 ];
@@ -98,7 +98,7 @@ export default function NavBar() {
 						gap: "1rem",
 					}}
 				>
-					<button
+					{/* <button
 						style={{
 							background: "#f68c5c",
 							color: "#fff",
@@ -111,7 +111,7 @@ export default function NavBar() {
 						}}
 					>
 						Login
-					</button>
+					</button> */}
 					{/* <button
 					style={{
 						background: "#2563eb",

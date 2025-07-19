@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
+    // { href: '/about', label: 'About' },
     { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'contact' },
   ];
